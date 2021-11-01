@@ -1,0 +1,39 @@
+<h1>Course registration form</h1>
+<form action="http://127.0.0.1.:8000/firstapp/">
+	<fieldset>
+		<legend>PERSONAL DETAILS</legend>
+		<table>
+			<tr><td><label>First Name</label></td><td><input type="text" name="FN" placeholder="Ex:Uma" size="15" maxlength="10"></td></tr>
+			<tr><td><label>First Name</label></td><td><input type="text" name="LN" placeholder="Ex:Parwani" size="15" maxlength="10"></td></tr>
+			<tr><td><label>Mobile Number</label></td><td><input type="tel" name= "mob" placeholder="999-815-6468" size="15"></td></tr>
+			<tr><td><label>Email</label></td><td><input type="Email" name="mail" size="15" placeholder="Ex:umaparwani@gmail.com"></td></tr>
+			<tr><td><label>Password</label></td><td><input type="Password" name="pwd" placeholder="min 5 characters" size="15"></td></tr>
+			<tr><td><label> Confirm Password</label></td><td><input type="Password" name="cwpwd" placeholder="min 5 characters" size="15"></td></tr>
+			<tr><td><label>DOB</label></td><td><input type="date" name="dob"></td></tr>
+			<tr><td><label>Gender</label></td><td><input type="radio" name="gender" value="M">Male<input type="radio" name="gender" value="F">Female<input type="radio" name="gender" value="C">Custom</td></tr>
+			<tr><td><label>Select Country</label></td><td><select name="country">
+			<option value="INDIA">INDIA</option>
+			<option value="USA">USA</option>
+			<option value="CHINA">CHINA</option>
+			</select></td></tr>
+			<tr><td><label>Upload Picture</label></td><td><input type="file" name="pic"></td></tr>
+			<tr><td><input type="reset"></td></tr>
+		</table>
+	</fieldset>
+	<fieldset>
+		<legend>COURSE DETAILS</legend>
+		<label>Select Course</label>
+		<select name="Course">
+			<option value="PFS">Python Full Stack</option>
+			<option value="JFS">Java Full Stack</option>
+			<option value="CJ">Core Java</option>
+			<option value="PDS">Python for Data Science</option>
+		</select><br>
+		<label>Delivery Mode</label>
+		<input type="checkbox" name="mode1" value="ON">ONLINE
+		<input type="checkbox" name="mode2" value="OFF">OFFLINE
+		<label>Comments</label><br>
+		<textarea rows="3" cols="40"></textarea>
+	</fieldset>
+	<img src="download.jpg" height="75" width="75" type="input" >
+</form>
